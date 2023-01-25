@@ -8,14 +8,16 @@
         <version>2.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.example</groupId>
     <artifactId>TollSystemRestPlugin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>TollSystemRestPlugin</name>
     <description>TollSystemRestPlugin</description>
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,6 +35,35 @@
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.6.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.tollsystem</groupId>
+            <artifactId>TollSystemApp</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.tollsystem</groupId>
+            <artifactId>TollSystemPersistenceStorage</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.vehicleregisterapp</groupId>
+            <artifactId>VehicleRegisterBusinessRules</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.vehicleregisterapp</groupId>
+            <artifactId>VehicleRegisterStorage</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.tollsystem</groupId>
+            <artifactId>VehicleRegisterPlugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
